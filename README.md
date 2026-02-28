@@ -32,23 +32,23 @@
 ## ✨ 项目展示
 
 <p align="center">
-  <video src="docs/showcase/pro_12306购票/demo.mp4" width="720" controls>
-    你的浏览器不支持 video 标签，<a href="docs/showcase/pro_12306购票/demo.mp4">点此下载视频</a>。
+  <video src="docs/showcase/ywtbuilder-railway-ticket-system/demo.mp4" width="720" controls>
+    你的浏览器不支持 video 标签，<a href="docs/showcase/ywtbuilder-railway-ticket-system/demo.mp4">点此下载视频</a>。
   </video>
 </p>
 
 <p align="center">
-  <img src="docs/showcase/pro_12306购票/shot-01.png" alt="车票查询页" width="720"/>
+  <img src="docs/showcase/ywtbuilder-railway-ticket-system/shot-01.png" alt="车票查询页" width="720"/>
 </p>
 <p align="center"><i>↑ 车票查询页——输入出发地、目的地、出行日期，实时展示可售列车与各席别余票/票价</i></p>
 
 <p align="center">
-  <img src="docs/showcase/pro_12306购票/shot-02.png" alt="下单确认页" width="720"/>
+  <img src="docs/showcase/ywtbuilder-railway-ticket-system/shot-02.png" alt="下单确认页" width="720"/>
 </p>
 <p align="center"><i>↑ 下单确认页——选择席别、填写乘客信息，系统生成订单并锁定座位</i></p>
 
 <p align="center">
-  <img src="docs/showcase/pro_12306购票/shot-03.png" alt="订单详情页" width="720"/>
+  <img src="docs/showcase/ywtbuilder-railway-ticket-system/shot-03.png" alt="订单详情页" width="720"/>
 </p>
 <p align="center"><i>↑ 订单详情页——展示订单号、车次、支付状态及单程乘车信息</i></p>
 
@@ -148,7 +148,7 @@ H2 控制台连接参数：JDBC URL `jdbc:h2:file:./data/railway`，用户名 `s
 **演示账号：** `admin` / `admin123`
 
 <p align="center">
-  <img src="docs/showcase/pro_12306购票/shot-01.png" alt="启动成功后首页截图" width="700"/>
+  <img src="docs/showcase/ywtbuilder-railway-ticket-system/shot-01.png" alt="启动成功后首页截图" width="700"/>
 </p>
 <p align="center"><i>↑ 看到此界面表示启动成功</i></p>
 
@@ -448,7 +448,7 @@ curl "http://localhost:9000/api/order-service/order/ticket/self/page?current=1&s
 ### 目录结构
 
 ```
-pro_12306购票/
+ywtbuilder-railway-ticket-system/
 ├── frontend/               # 前端源码（Vue 3 + Vite 5）
 │   ├── src/
 │   │   ├── views/          # 页面组件：登录/搜索/下单/订单/乘客
@@ -468,7 +468,7 @@ pro_12306购票/
 │       └── data.sql        # 初始测试数据（7 条线路、11 个站、完整价格）
 ├── db/
 │   └── init.sql            # MySQL 模式建表 + 初始数据
-├── docs/showcase/pro_12306购票/  # 演示截图与视频
+├── docs/showcase/ywtbuilder-railway-ticket-system/  # 演示截图与视频
 ├── docker-compose.yml      # 可选 MySQL + Redis 容器
 ├── startup.bat             # Windows 一键启动脚本
 └── README.md
@@ -601,4 +601,5 @@ JDBC URL 必须填写 `jdbc:h2:file:./data/railway`，用户名 `sa`，密码**�
 
 **维护者：** YWT  
 **联系方式：** GitHub Issues
+
 
