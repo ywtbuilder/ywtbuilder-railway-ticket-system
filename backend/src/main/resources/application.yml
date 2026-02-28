@@ -1,0 +1,40 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: railway-12306
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:file:./data/railway;MODE=MySQL
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
+      data-locations: classpath:data.sql
+      encoding: UTF-8
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      logic-delete-field: delFlag
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+railway:
+  jwt:
+    # 请替换为自己的随机密钥（至少 32 个字符），切勿在生产环境使用默认值
+    secret: ${RAILWAY_JWT_SECRET:your-secret-key-please-change-this-before-deploy}
+    expiration: 86400000
+
+logging:
+  level:
+    com.railway: INFO
