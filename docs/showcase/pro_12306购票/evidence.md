@@ -16,7 +16,7 @@
 ## 一键运行命令
 
 ```bat
-cd pro_12306购票
+cd ywtbuilder-railway-ticket-system
 startup.bat
 ```
 
@@ -61,4 +61,5 @@ startup.bat
 
 5. **如何从当前版本平滑演进到分布式架构？**  
    第一步：拆数据库（用户库、订单库、票务库）；第二步：按领域拆服务（用 Feign 内部调用）；第三步：引入 Redis 缓存热点站点和列车数据；第四步：用 RocketMQ 解耦支付回调与订单状态更新。
+
 

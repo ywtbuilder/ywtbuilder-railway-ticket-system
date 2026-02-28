@@ -111,7 +111,7 @@
 
 ```bash
 git clone <仓库地址>
-cd pro_12306购票
+cd ywtbuilder-railway-ticket-system
 ```
 
 ### 第二步：一键启动（推荐）
@@ -601,3 +601,4 @@ JDBC URL 必须填写 `jdbc:h2:file:./data/railway`，用户名 `sa`，密码**�
 
 **维护者：** YWT  
 **联系方式：** GitHub Issues
+
